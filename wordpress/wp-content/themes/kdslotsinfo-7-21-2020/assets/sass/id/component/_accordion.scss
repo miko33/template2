@@ -1,0 +1,59 @@
+// ==================== Accordion ==================
+#accordion {
+    .card {
+        border: none;
+        .card-header {
+            background: rgb(38, 39, 44);
+            padding: 0px;
+        }
+        .btn-link {
+            font-weight: 400;
+            color: rgb(255, 238, 114);
+            text-decoration: none;
+        }
+        .card-body {
+            background: rgb(17, 17, 17);
+        }
+        button {
+            font-size: 12px;
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+        }
+        
+        .btn-link {
+            position: relative;
+            &:after {
+                content: "\f054";
+                color: rgb(255, 238, 114);
+                position: absolute;
+                right: 10px;top: 50%;
+                transform: translateY(-50%);
+                font-family: "FontAwesome"
+            }
+            &[aria-expanded="true"]{
+                &:after {
+                    content: "\f078";
+                }
+            }
+          }
+            
+    }
+}
+
+
+.footer-bank-accordion {
+    border: none;
+    tr,td,tbody {
+        border: none!important;
+        padding: 10px 10px 10px 0px;
+    }
+    img {
+        width: 95px;
+    }
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+}

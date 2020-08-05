@@ -1,0 +1,86 @@
+
+.navbar-icon {
+    width: 30px;
+    height: 22px;
+    display: inherit;
+    position: relative;
+    top: 3px;
+    &.icon-home {
+        background: url(../img/ico-nav/icon-navbar-home.png) center no-repeat;
+        background-size: 25px 22px;
+    }
+}
+
+.ico-navbar-home {
+    content: url(../img/ico-nav/icon-navbar-home.png);
+}
+
+.order-content {
+    padding: 20px 15px;
+}
+
+@media (min-width: 768px) {
+    .order-slider {
+        order: 1;
+    }
+    .order-iframe {
+        order: 2;
+    }
+    .order-content {
+        order: 3;
+    }
+    .order-text-caution {
+        order: 4;
+    }
+    .order-footer-bank {
+        order: 5;
+    }
+    .order-footer-accordion {
+        order: 6;
+    }
+    .order-footer-bank-status {
+        order: 7;
+    }
+    .order-footer-copy {
+        order: 8;
+    }
+}
+@media (max-width: 767px) {
+    .order-slider {
+        order: 1;
+    }
+    .order-content {
+        order: 2;
+    }
+    
+    .order-iframe {
+        order: 3;
+    }
+    .order-text-caution {
+        order: 4;
+    }
+    .order-footer-bank {
+        order: 5;
+    }
+    .order-footer-accordion {
+        order: 6;
+    }
+    .order-footer-bank-status {
+        order: 7;
+    }
+    .order-footer-copy {
+        order: 8;
+    }
+}
+  
+@media (max-width: 768px) {
+    .icon-hd {
+        border:none;
+        display: flex;
+        justify-content: center;
+    }
+    .pad-container {
+        background-color: rgb(0,0,1);;
+    }
+}
+

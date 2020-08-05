@@ -1,0 +1,251 @@
+.footer-bank {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    .footer-bank-item {
+        position: relative;
+        width: 100%;
+        max-width: 25%;
+        min-height: 100px;
+        padding: 10px;
+        @media (max-width: 767px) {
+            max-width: 33%;
+            padding: 2px;
+            min-height: unset;
+        }
+        .footer-bank-intern {
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgb(227, 207, 83);
+            border-radius: 5px;
+            text-align: center;
+            table {
+                width: 100%;font-size: 16px;color: white;font-family: 'bebasKai';text-align: left;padding: 0 2px;text-align: center;
+            }
+            img {
+                margin: 10px auto;
+            }
+            &.bca-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.bni-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.mandiri-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.bri-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.cimb-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.permata-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.voucher88 {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.may-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            &.panin-bank {
+                img  {
+                    max-width: 100px;
+                }
+            }
+            
+            @media (max-width: 767px) {
+                table { display: none; }
+                &.bca-bank {
+                    img  {
+                        max-width: 65px;
+                    }
+                }
+                &.bni-bank {
+                    img  {
+                        max-width: 55px;
+                    }
+                }
+                &.mandiri-bank {
+                    img  {
+                        max-width: 55px;
+                    }
+                }
+                &.bri-bank {
+                    img  {
+                        max-width: 65px;
+                    }
+                }
+                &.cimb-bank {
+                    img  {
+                        max-width: 85px;
+                    }
+                }
+                &.permata-bank {
+                    img  {
+                        max-width: 75px;
+                    }
+                }
+                &.voucher88 {
+                    img  {
+                        max-width: 75px;
+                    }
+                }
+                &.may-bank {
+                    img  {
+                        max-width: 75px;
+                    }
+                }
+                &.panin-bank {
+                    img  {
+                        max-width: 75px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.footer-bank-intern {
+	position:relative;
+    .led-lamp { 
+        width: 12px;
+        height: 12px;
+        position:absolute;
+        left:8px;top:14px;
+        @media (min-width: 768px) {
+            left:5px;
+            top:5px;
+        }
+        
+        &.led-green {
+            background-color: #6fff82;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #8ac01e 0 -1px 9px, #6fff82 0 2px 12px;
+            -webkit-animation: blinkGreen 1s infinite;
+            -moz-animation: blinkGreen 1s infinite;
+            -ms-animation: blinkGreen 1s infinite;
+            -o-animation: blinkGreen 1s infinite;
+            animation: blinkGreen 1s infinite;
+        }
+        &.led-yellow {
+            background-color: #A90;
+            border-radius: 50%;
+            box-shadow: #000 0 -1px 7px 1px, inset #660 0 -1px 9px, #DD0 0 2px 12px;
+            -webkit-animation: blinkRed 0.5s infinite;
+            -moz-animation: blinkYellow 0.5s infinite;
+            -ms-animation: blinkYellow 0.5s infinite;
+            -o-animation: blinkYellow 0.5s infinite;
+            animation: blinkYellow 0.5s infinite;
+        }
+        &.led-red {
+            background-color: #940;
+            border-radius: 50%;
+            box-shadow: #000 0 -1px 7px 1px, inset #600 0 -1px 9px, #F00 0 2px 12px;
+            -webkit-animation: blinkRed 0.5s infinite;
+            -moz-animation: blinkRed 0.5s infinite;
+            -ms-animation: blinkRed 0.5s infinite;
+            -o-animation: blinkRed 0.5s infinite;
+            animation: blinkRed 0.5s infinite;
+        }
+    }
+}
+
+
+@-webkit-keyframes blinkGreen {
+  from { background-color: rgb(63, 85, 20); }
+  50% { background-color: rgb(0, 255, 42); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #8ac01e 0 -1px 9px, #ABFF00 0 2px 12px; }
+  to { background-color: rgb(63, 85, 20); }
+}
+@-moz-keyframes blinkGreen {
+  from { background-color: rgb(63, 85, 20); }
+  50% { background-color: rgb(0, 255, 42); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #8ac01e 0 -1px 9px, #ABFF00 0 2px 12px; }
+  to { background-color: rgb(63, 85, 20); }
+}
+@-ms-keyframes blinkGreen {
+  from { background-color: rgb(63, 85, 20); }
+  50% { background-color: rgb(0, 255, 42); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #8ac01e 0 -1px 9px, #ABFF00 0 2px 12px; }
+  to { background-color: rgb(63, 85, 20); }
+}
+@-o-keyframes blinkGreen {
+  from { background-color: rgb(63, 85, 20); }
+  50% { background-color: rgb(0, 255, 42); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #8ac01e 0 -1px 9px, #ABFF00 0 2px 12px; }
+  to { background-color: rgb(63, 85, 20); }
+}
+@keyframes blinkGreen {
+  from { background-color: rgb(63, 85, 20); }
+  50% { background-color: rgb(0, 255, 42); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #8ac01e 0 -1px 9px, #ABFF00 0 2px 12px; }
+  to { background-color: rgb(63, 85, 20); }
+}
+
+@-webkit-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: rgb(255, 255, 1); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12; }
+    to { background-color: #FF0; }
+}
+@-moz-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12; }
+    to { background-color: #FF0; }
+}
+@-ms-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12; }
+    to { background-color: #FF0; }
+}
+@-o-keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12; }
+    to { background-color: #FF0; }
+}
+@keyframes blinkYellow {
+    from { background-color: #FF0; }
+    50% { background-color: #AA0; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12; }
+    to { background-color: #FF0; }
+}
+
+
+@-webkit-keyframes blinkRed {
+    from { background-color: #F00; }
+    50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;}
+    to { background-color: #F00; }
+}
+@-moz-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;}
+  to { background-color: #F00; }
+}
+@-ms-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;}
+  to { background-color: #F00; }
+}
+@-o-keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;}
+  to { background-color: #F00; }
+}
+@keyframes blinkRed {
+  from { background-color: #F00; }
+  50% { background-color: #A00; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;}
+  to { background-color: #F00; }
+}

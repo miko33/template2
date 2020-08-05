@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=0">
+     <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./assets/js/jquery.slim.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/marquee.min.js"></script>
+    <script src="./assets/bootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <title>KD Bola</title>
+</head>
+<body class="main">
+        <div class="body-container">
+            <!-- Section Header -->
+            <section id="header">
+                <section class="nav-menu sticky-nav" id="sticky-navbar nav-menu">
+                    <div class="container nav-container-sticky">
+                        <div class="row sticky-header">
+                            <div class="col-sm-2 logo-sticky">
+                                <a href="" class="link-logo-stiky">
+                                    <img src="./assets//img/misc/kdbolalogo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-10 sticky-navbar">
+                                <ul class="nav full-expand-nav-sticky">
+                                    <li class="menu sticky-menu">
+                                         <a href="">home</a> 
+                                    </li>
+                                    <li class="menu sticky-menu">
+                                         <a href="">headlines</a> 
+                                    </li>
+                                    <li class="dropdown menu sticky-menu">
+                                        <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span>BOLA</span>
+                                        </a>
+                                        <div class="dropdown-menu sub-bola" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">LIGA Indonesia</a>
+                                            <a class="dropdown-item" href="#">LIGA inggris</a>
+                                            <a class="dropdown-item" href="#">LIGA Spanyol</a>
+                                            <a class="dropdown-item" href="#">LIGA Jerman</a>
+                                            <a class="dropdown-item" href="#">LIGA Italia</a>
+                                        </div>
+                                    </li>
+                                    <li class="menu sticky-menu">
+                                         <a href="">dunia</a> 
+                                    </li>
+                                    <li class="menu sticky-menu">
+                                         <a href="">indonesia</a> 
+                                    </li>
+                                    <li class="menu sticky-menu">
+                                         <a href="">liga inggris</a> 
+                                    </li>
+                                    <li class="dropdown menu sticky-menu">
+                                        <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span>SPORT</span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Moto GP</a>
+                                            <a class="dropdown-item" href="#">NBA</a>
+                                            <a class="dropdown-item" href="#">E-Sport</a>
+                                            <a class="dropdown-item" href="#">Ragam</a>
+                                          </div>
+                                    </li>
+                                    <li class="menu sticky-menu">
+                                         <a href="">livescore</a> 
+                                    </li>
+                                    <li class="menu sticky-menu">
+                                         <a href="">video</a> 
+                                    </li>
+                                    <div class="search-wrapper dropdown">
+                                        <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span><i class="fas fa-search fa-xs" style="padding-right: 3px;"></i>Cari</span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <form action="">
+                                                <input type="input" class="search-input" value="" placeholder="Cari di kdbola.com">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container head-container">
+                    <div class="row header">
+                        <div class="col-md-6 logo">
+                            <a href="#" class="logo-icon">
+                                <img src="./assets/img/misc/kdbolalogo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6 search-bar">
+                            <form class="search-form">
+                                <input type="input" class="search-input" value="" placeholder="Topik Berita apa yang ingin Anda cari?">
+                                <i class="fas fa-search"></i>
+                                
+                                <button type="submit" class="btn-search">CARI</button>
+                            </form>
+                        </div>
+                        <section id="nav-menu fixed-navbar" class="navbar fixed-navbar">
+                                <div class="nav-container">
+                                    <ul class="nav full-expand-nav">
+                                        <li class="menu fixed-menu">
+                                             <a href="">home</a> 
+                                        </li>
+                                        <li class="menu fixed-menu">
+                                             <a href="">headlines</a> 
+                                        </li>
+                                        <li class="dropdown menu fixed-menu">
+                                            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>BOLA</span>
+                                            </a>
+                                            <div class="dropdown-menu sub-bola" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">LIGA Indonesia</a>
+                                                <a class="dropdown-item" href="#">LIGA inggris</a>
+                                                <a class="dropdown-item" href="#">LIGA Spanyol</a>
+                                                <a class="dropdown-item" href="#">LIGA Jerman</a>
+                                                <a class="dropdown-item" href="#">LIGA Italia</a>
+                                            </div>
+                                        </li>
+                                        <li class="menu fixed-menu">
+                                             <a href="">dunia</a> 
+                                        </li>
+                                        <li class="menu fixed-menu">
+                                             <a href="">indonesia</a> 
+                                        </li>
+                                        <li class="menu fixed-menu">
+                                             <a href="">liga inggris</a> 
+                                        </li>
+                                        <li class="dropdown menu fixed-menu">
+                                            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span>SPORT</span>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Moto GP</a>
+                                                <a class="dropdown-item" href="#">NBA</a>
+                                                <a class="dropdown-item" href="#">E-Sport</a>
+                                                <a class="dropdown-item" href="#">Ragam</a>
+                                              </div>
+                                        </li>
+                                        <li class="menu fixed-menu">
+                                             <a href="">livescore</a> 
+                                        </li>
+                                        <li class="menu fixed-menu">
+                                             <a href="">video</a> 
+                                        </li>
+                                    </ul>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <script src="./assets/js/mini.js"></script>
+            <div class="container news-container">
+                <div class="col-md-12" id="news">
+                    <div class="running-text-wrapper">
+                        <div class="running-text-header">BERITA :</div>
+                        <div class="marquee-wrapper">
+                            <div class="marquee">
+                                <marquee behavior="" direction="">Liverpool Berhasil Mengunci Gelar Sebagai Juara Premiere League Musim 20/21 dengan Total Perolehan Poin 93.</marquee> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container ads-space-container">
+                <div class="col-md-12 ads-banner">
+                    <img src="./assets/img/misc/ads-banner.png" alt="" class="banner">
+                </div>
+
+            </div>
+            <section id="content">
+                <div class="container main-content">
+                    <div class="row content">
+                        <div class="col-sm-9 berita-terkini">
+                            <div class="row">
+                            <div class="col-sm-12 bt-header-border" >
+                                <label class="title-head-bt"> <a href=""> Berita Terkini</a></label>
+                                <label class="link-title-head-bt"> <a href="" class="">Lihat Indeks Berita Hari ini <i class="fas fa-chevron-right fa-sm"></i></a></label>
+                            </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row content-bt">
+                                    <div class="col-sm-4 thumbnail-bt">
+                                        <a href="" class="link-thumbs-bt">
+                                            <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-8 header-content-bt">
+                                        <div class="btn btn-link category">Liga Indonesia</div>
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
+                                        
+                                        <span class="summary-content-bt">
+                                            Osas Saha memberikan tips untuk para penyerang muda di Indonesia tentang apa saja yang harus diperhatikan penyerang muda agar bisa
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 berita-populer" style="padding-left: 40px;">
+                            <div class="row">
+                            <div class="col-sm-12 bp-header-border">
+                                <label class="title-head-bp"> <a href="">Berita Populer <img src="./assets/img/misc/arrow-elipse.png" alt=""></a></label>
+                            </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content3.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content4.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content3.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content4.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content3.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content4.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content3.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content4.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content3.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                                <div class="row content-bp">
+                                    <div class="col-sm-12 thumbnail-bp">
+                                        <a href="" class="link-thumbs-bp">
+                                            <img src="./assets/img/content/img-content4.png" alt="" class="thumbs-bp">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-12 header-content-bp">
+                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+            </section>
+        </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+#overlay-load {
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    /* background:rgba(0,0,0,0.9); */
+    background-image: url(./assets/img/misc/load/gif1-desktop.gif);
+    transition: 1s 0.4s;
+}
+
+    .overlay-sidebar {
+        position: fixed;
+        left: 0;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        @media (max-width: 768px) {
+            &.opened-sidebar {
+                position: fixed;
+                left: 250px;
+                z-index: 9;
+                width: 100%;
+                height: 100vh;
+                background-color: black;
+                a {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    background-color: rgb(180, 11, 11);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .splash-screen {
+        position: fixed;
+        z-index: 9999999;
+        top: 0;
+        left: 0;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        background-color: #11151a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .splash-logo {
+            background-image:url(../img/misc/logo-splash-loading.png);
+            background-size: 23%;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 170px;
+            width: 100%;
+          }
+          .splash-progress {
+            width: 455px;
+            height: 10px;
+            background-color: #1b232b;
+            border-radius: 8px;
+          }
+          .splash-bar {
+            height: 10px;
+            width: 0%;
+            background-color: #efde5b;
+            border-radius: 8px;
+            background: rgb(221,198,74);
+            background: linear-gradient(0deg, rgba(221,198,74,1) 0%, rgba(186,159,46,1) 42%, rgba(252,239,114,1) 69%, rgba(227,207,83,1) 100%);
+            transition: width 1s ease-out;
+          }
+          img {
+            width: 800px;
+        }
+        
+        @media (max-width: 768px) {
+            .splash-logo {
+                background-size: 95%;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 15%;
+                width: 80%;
+                /* margin-bottom: -50px; */
+        
+            }
+            .splash-progress {
+                width: 80%;
+                height: 7px;
+                background-color: #1b232b;
+                border-radius: 8px;
+            }
+            .splash-bar {
+                height: 7px;
+                width: 0%;
+                background-color: #efde5b;
+                border-radius: 8px;
+                background: rgb(221,198,74);
+                background: linear-gradient(0deg, rgba(221,198,74,1) 0%, rgba(186,159,46,1) 42%, rgba(252,239,114,1) 69%, rgba(227,207,83,1) 100%);
+                transition: width 1s ease-out;
+            }
+        }
+
+    }

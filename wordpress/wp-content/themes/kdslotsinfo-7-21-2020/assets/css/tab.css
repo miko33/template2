@@ -1,0 +1,25 @@
+.wpsm_nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wpsm_nav > li > a > span {
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+.wpsm_nav-tabs > li {
+    width: 100%;
+    max-width: 25%;
+}
+
+
+@media (max-width: 768px) {
+    .wpsm_nav-tabs > li {
+        width: 100%;
+        max-width: 50%;
+    }
+    .wpsm_nav-tabs > li > a {
+        min-height: 72px;
+    }
+}
