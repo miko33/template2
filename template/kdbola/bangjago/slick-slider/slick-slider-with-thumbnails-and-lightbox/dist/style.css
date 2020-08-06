@@ -1,0 +1,20 @@
+.slider-post{
+  /* width: 100%; */
+  /* margin: 0 auto; */
+}
+.post-thumbnails img{
+  width: 232px;
+  height: 115px;
+  /* margin: 10px; */
+}
+.slick-slide{
+  overflow: hidden;
+}
+@media(max-width: 1140px){
+  .thumbnails{
+    display: none;
+  }
+  /* .slider-post{
+    width: 100%;
+  } */
+}

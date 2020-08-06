@@ -1,0 +1,176 @@
+html {
+  background: #111 url("http://greatnatureproject.org/static/img/background-photos.jpg") repeat left top;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, p, span {
+  margin: 0;
+}
+
+.font-style-default {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxsize-fixing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  max-width: 961px;
+  margin: 0 auto;
+  list-style-type: none;
+  text-decoration: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.main-wrapper section.carousel-container {
+  margin-top: 11px;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper {
+  width: 100%;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper .slider-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper .slider-viewport ul.slide-images {
+  flex: 1 100%;
+  flex: -webkit- 1 100%;
+  -webkit-flex: 1 100%;
+  -moz-flex: 1 100%;
+  -ms-flex: 1 100%;
+  width: auto;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper .slider-viewport ul.slide-images li {
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper .slider-viewport ul.slide-images li img {
+  max-width: 100%;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav {
+  /* display: block; */
+  max-width: 939px;
+  top: 320px;
+  position: absolute;
+  margin: 9px;
+  z-index: 1;
+  background-color: #000;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  justify-content: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li {
+  padding: 9px 17px;
+  opacity: 0.7;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li h3 {
+  color: #cd1821;
+  font-weight: 100;
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li p {
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 13px;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li img.content-thumbnail {
+  float: left;
+  margin: 3px 14px 1px 0;
+  width: 100%;
+  max-width: 128px;
+}
+.main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li.active {
+  background-color: #BAA6A7;
+  opacity: 1;
+}
+
+@media all and (max-width: 895px) {
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav {
+    bottom: 0;
+    position: inherit;
+  }
+}
+@media all and (max-width: 769px) {
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li {
+    text-align: center;
+  }
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li img.content-thumbnail {
+    float: none;
+    margin: 0;
+  }
+}
+@media all and (max-width: 601px) {
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav {
+    width: 100%;
+    margin: 0 !important;
+    align-items: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    justify-content: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+  }
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li {
+    padding: 9px 17px 3px 17px;
+  }
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li img.content-thumbnail {
+    margin: 0;
+  }
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li p {
+    display: none;
+  }
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li h3 {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 321px) {
+  .main-wrapper section.carousel-container #cycling-promo.slide-image-wrapper nav.thumb-nav ul li h3 {
+    font-size: 12px;
+  }
+}
