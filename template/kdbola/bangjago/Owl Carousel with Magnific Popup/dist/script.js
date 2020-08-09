@@ -52,6 +52,7 @@ function singleGalleryCarousel () {
         //         }
         //     }
         // });
+        
     
         $sync2.owlCarousel({ //function for thumbnails carousel
             loop: false,
@@ -59,6 +60,9 @@ function singleGalleryCarousel () {
             autoplay: true,
             autoplayHoverPause: true,
             nav: false,
+            onInitialized: startProgressBar,
+            onTranslate: resetProgressBar,
+            onTranslated: startProgressBar,
             dots: false,
             navText:false,
             responsive: {
@@ -80,5 +84,25 @@ function singleGalleryCarousel () {
             $sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
         })
     };
+
+    //Init the carousel
+
+function startProgressBar() {
+    // apply keyframe animation
+    $(".slide-progress").css({
+      width: "100%",
+      transition: "width 5000ms"
+    });
+  }
+  
+  function resetProgressBar() {
+    $(".slide-progress").css({
+      width: 0,
+      transition: "width 0s"
+    });
+  }
+  
+
+
 }
 singleGalleryCarousel (); //FUNCTION CALLED HERE
