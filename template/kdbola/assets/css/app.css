@@ -479,7 +479,7 @@ body.main {
   padding: 1px 10px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #dbcc50;
+  color: #dbce51;
   background-color: #111111;
   border-radius: .20rem;
 }
@@ -545,8 +545,8 @@ body.main {
 
 .content-bp > .thumbnail-bp {
   padding: 0;
-  width: 212px;
-  height: 101px;
+  width: 223px;
+  height: 110px;
 }
 
 .content-bp > .thumbnail-bp > .link-thumbs-bp {
@@ -554,8 +554,7 @@ body.main {
 }
 
 .content-bp > .thumbnail-bp > .link-thumbs-bp > .thumbs-bp {
-  width: 212px;
-  height: 101px;
+  width: 100%;
 }
 
 .content-bp > .header-content-bp {
@@ -563,7 +562,7 @@ body.main {
 }
 
 .content-bp > .header-content-bp > .head-title-content-bp {
-  font-size: 18px;
+  font-size: 16px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.39;
@@ -787,6 +786,92 @@ body.main {
   color: #161616;
   line-height: 2em;
   margin-top: 10px;
+}
+
+.content-page .article-body-paging:last-child {
+  border-bottom: solid 1px #E5E5E5;
+}
+
+.content-page .tag-box {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: table;
+  width: 100%;
+}
+
+.content-page .tag-box .list-tag {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+
+.content-page .tag-box .list-tag li {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.content-page .tag-box .list-tag li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #888888;
+  padding: 5px 8px;
+  display: block;
+  border: 1px solid #888888;
+}
+
+.content-page .tag-box .list-tag li a:hover {
+  background: #dbcc50;
+}
+
+.content-page .tag-box .list-tag li:first-child a {
+  background: #dbcc50;
+}
+
+.content-page .related-content {
+  margin: 5px 0;
+  line-height: 1em;
+  font-size: 12px;
+  border-bottom: solid 1px #E5E5E5;
+}
+
+.content-page .related-content .related-content-box {
+  font: 18px/1.65em SegoeUI;
+  color: #333333;
+  width: 582px;
+}
+
+.content-page .related-content .related-content-box .related-content-item {
+  margin: 10px 0;
+}
+
+.content-page .comment-header {
+  font-family: SegoeBold;
+  font-weight: bold;
+  margin-bottom: 250px;
+}
+
+.index-button {
+  display: block;
+  width: 140px;
+  border: solid 1px #CDCDCD;
+  border-radius: 25px;
+  margin: 50px auto;
+}
+
+.index-button a {
+  font-size: 15px;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: SegoeUI;
+  color: #6d6d6d;
 }
 
 .carousel-container {
