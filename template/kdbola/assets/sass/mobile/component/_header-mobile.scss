@@ -1,0 +1,31 @@
+
+@media (max-width: 768px) {
+
+    .top-bar-menu{
+        padding-top: 5px;
+        background-position: center center;
+        vertical-align: middle;
+        .bar-menu1{
+            width: 40px;
+            height: 5px;
+            background-color: #dbcc50;
+            margin: 6px 0;
+                border-radius: 15px;
+          }
+          .bar-menu2{
+            width: 20px;
+            height: 5px;
+            background-color: #dbcc50;
+            margin: 6px 0;
+                border-radius: 15px;
+          }
+          .bar-menu3{
+            width: 30px;
+            height: 5px;
+            background-color: #dbcc50;
+            margin: 6px 0;
+                border-radius: 15px;
+          }
+    }
+
+}
