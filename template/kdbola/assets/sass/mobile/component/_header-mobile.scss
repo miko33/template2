@@ -1,31 +1,60 @@
 
 @media (max-width: 768px) {
 
-    .top-bar-menu{
-        padding-top: 5px;
-        background-position: center center;
-        vertical-align: middle;
-        .bar-menu1{
-            width: 40px;
-            height: 5px;
-            background-color: #dbcc50;
-            margin: 6px 0;
-                border-radius: 15px;
-          }
-          .bar-menu2{
-            width: 20px;
-            height: 5px;
-            background-color: #dbcc50;
-            margin: 6px 0;
-                border-radius: 15px;
-          }
-          .bar-menu3{
-            width: 30px;
-            height: 5px;
-            background-color: #dbcc50;
-            margin: 6px 0;
-                border-radius: 15px;
-          }
+    .nav-bar-mobile {
+         background-color: #111111;
+         padding: 20px 0 15px;
+        .top-bar-menu{
+            padding-top: 5px;
+            img {
+                width: 30px;
+                height: 20px;
+            }
+        }
+        
+        .logo-mobile{
+            width: 100%;
+            text-align: center;
+            .link-logo-mobile img {
+                width: 150px;
+                height: 30px;
+            }
+        }
+        .i-nav-cari{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50px;
+            background-position: center center;
+            color: #dbd950;
+        }
+
+    }
+
+    .top-nav {
+        background-color: #252525;
+        text-align: center !important;
+        font-size: 15px;
+        padding: 0;
+        .top-nav-list{
+            list-style: none;
+            margin: 0;
+            padding: 6px 0;
+            white-space: nowrap;
+            overflow-x: auto;
+            .top-nav-item {
+                display: inline-block;
+                margin: 0;
+                
+                .top-nav-item__link {
+                    color: white;
+                    text-decoration: none;
+                    border-bottom: 2px solid #dbd950;
+                    padding: 5px 7px;
+                }
+            }
+        }
     }
 
 }
