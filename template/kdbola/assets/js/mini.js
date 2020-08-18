@@ -3,36 +3,49 @@ $ ( document).ready(function(){
     // $( ".dropdown-toggle" ).click(function() {
     //     $('.dropdown-menu').toggleClass('show');
     //   });
-  
 
-    // $(window).scroll(function () {
-    //   if($(window).scrollTop() > 20) {
-    //     // alert('Ppppp');
-    //     $("#sticky-navbar").css({
-    //       "background-color": "#fff",
-    //       "position":"fixed"
-    //     })
-    //   } else {
-    //     $("#fixed-navbar").css({
-    //       "display": "none",
-    //     });
-    //   }
-    // });winley$15
-  // alert("padd")
+});
 
-    var num = 50; //number of pixels before modifying styles
-
+if($(window).width() > 770) {
 $(window).bind('scroll', function () {
-    if ($(window).scrollTop() > num) {
-        $('.sticky-nav').addClass('fixed');
-        $('.fixed-navbar').addClass('none');
-    } else {
-        $('.sticky-nav').removeClass('fixed');
-        $('.fixed-navbar').removeClass('none');
-    }
+  if ($(window).scrollTop() > 50) {
+      $('.sticky-nav').addClass('fixed');
+      $('.fixed-navbar').addClass('none');
+  } else {
+      $('.sticky-nav').removeClass('fixed');
+      $('.fixed-navbar').removeClass('none');
+  }
 });
+}else {
+  $('.fixed-navbar').addClass('none');
+}
 
-});
+
+
+$(window).on('resize', function() {
+  if($(window).width() < 770) {
+      $('.header-mobile').addClass('show');
+      $('.header').addClass('none');
+      $('.carousel-container').addClass('none');
+      $('.topnews-container').addClass('show');
+  }else{
+      $('.header-mobile').removeClass('show');
+      $('.header').removeClass('none');
+      $('.carousel-container').removeClass('none');
+      $('.topnews-container').removeClass('show');
+  }
+})
+if($(window).width() < 770) {
+  $('.header-mobile').addClass('show');
+  $('.header').addClass('none');
+  $('.carousel-container').addClass('none');
+  $('.topnews-container').addClass('show');
+}else{
+  $('.header-mobile').removeClass('show');
+  $('.header').removeClass('none');
+  $('.carousel-container').removeClass('none');
+  $('.topnews-container').removeClass('show');
+}
 
 (function($){
   $('#thumbcarousel').carousel(0);
@@ -55,7 +68,6 @@ $(window).bind('scroll', function () {
       }
   });
 })(jQuery);
-
 //Get the button
 var mybutton = document.getElementById("backTotop");
 
@@ -75,3 +87,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
+

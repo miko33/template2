@@ -85,8 +85,19 @@ padding: 0;
     overflow: hidden;
 }
 }
+ .header-mobile {
+     display: none;
+ }
+ 
+ .topnews-container {
+     display: none;
+ }
 
 
 .hide {
-    display: none;
+    display: none !important;
+}
+
+.show {
+    display: block !important;
 }

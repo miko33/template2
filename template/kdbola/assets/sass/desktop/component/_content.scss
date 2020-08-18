@@ -2,9 +2,10 @@
     border-bottom: rgb(219, 204, 80) solid 3px;
     padding: 0;
 }
-// .berita-terkini {
-//     width: 100%;
-// }
+.berita-populer {
+    padding-left: 40px;
+ }
+
 
 // for submenu
 .thumbs-large {
@@ -96,13 +97,12 @@
     & >.thumbnail-bt {
         padding: 0;
         width: 261px;
-        height: 131px;
         & > .link-thumbs-bt {
             text-decoration: none;
 
             & > .thumbs-bt {
-                width: 261px;
-                height: 131px;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -120,7 +120,6 @@
             text-decoration: none;
             color: rgb(219, 206, 81);
             background-color: rgb(17, 17, 17);
-            border-radius: .20rem;
         }
 
         & > .head-title-content-bt {
@@ -220,8 +219,7 @@
     margin: 0;
     padding: 10px 0 0 0;
     .thumbnail-bv{
-        width: 212px;
-        height: 101px;
+        width: 100%;
         position: relative;
         padding: 0;
 
@@ -231,8 +229,8 @@
             height: 100%;
 
             .thumb-vid {  
-                width: 212px;
-                height: 101px;
+                width: 100%;
+                height: 100%;
             }
                 .play-vid {
                     position: absolute;

@@ -227,9 +227,6 @@
 }
 
 #news {
-    @media (max-width: 768px) {
-        margin-top: 10px;
-    }
     .running-text-wrapper {
         background: rgb(213,204,80);
         height: 30px;
@@ -257,14 +254,7 @@
             overflow: hidden;
         }
         
-        @media (max-width: 768px) {
-            .running-text-header {
-                width: 35%;
-            }
-            .marquee-wrapper {
-                width: 65%;
-            }
-        }
+
 
     }
 }
