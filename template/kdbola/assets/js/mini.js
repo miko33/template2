@@ -4,6 +4,13 @@ $ ( document).ready(function(){
     //     $('.dropdown-menu').toggleClass('show');
     //   });
 
+    $(".bar-trigger").click(function(event){
+        $('body.main').toggleClass('opened-sidebar');
+        $('overlay-side-bar').toggleClass('opened-sidebar');
+        $('')
+        .preventDefault();
+    });
+
 });
 
 if($(window).width() > 770) {
@@ -19,6 +26,7 @@ $(window).bind('scroll', function () {
 }else {
   $('.fixed-navbar').addClass('none');
 }
+
 
 
 

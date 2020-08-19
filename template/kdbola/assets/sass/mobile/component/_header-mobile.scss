@@ -4,6 +4,56 @@
         display: none;
     }
 
+    body.main{
+        left: 330px !important;
+    }
+
+    .turn-to-sidebar {
+        &.opened-sidebar {
+            left: 0;
+        }
+    }
+
+    .overlay-side-bar{
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding-right: 0px;
+    padding-left: 0px;
+    left: 0;
+    width: 330px;
+    background: #121212;
+    height: 100vh;
+
+      .overlay-container {
+        padding: 20px 20px 0px 20px;
+        
+        hr{
+            border-top: 1px solid rgb(54,54,54);
+        }
+      }
+        .main-sidebar,.sub-sidebar{
+           list-style: none;
+           padding: 0;
+        }
+        .main-sidebar-item,.sub-sidebar-item{
+            padding: 10px 0;
+    
+            a span {
+                color: white;
+                font-family: SegoeUI;
+                padding-left: 20px;
+                font-size: 17px;
+            }
+            a img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }   
+    
+
     .nav-bar-mobile {
         width: auto;
         position: -webkit-sticky;
