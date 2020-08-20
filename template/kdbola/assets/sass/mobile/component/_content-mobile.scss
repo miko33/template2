@@ -1,0 +1,17 @@
+
+@media (max-width:768px)
+{
+        .image-headline-page img{
+            height: 260px;
+            padding: 10px 0;
+        }
+        
+        .image-headline-page{
+            margin: 0 -15px 0 -15px;
+        }
+        
+        .list-tag li:first-child{
+            display: none;
+        }
+
+}

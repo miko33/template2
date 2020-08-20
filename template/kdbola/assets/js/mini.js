@@ -6,9 +6,9 @@ $ ( document).ready(function(){
 
     $(".bar-trigger").click(function(event){
         $('body.main').toggleClass('opened-sidebar');
-        $('overlay-side-bar').toggleClass('opened-sidebar');
-        $('')
-        .preventDefault();
+        $('.overlay-side-bar').toggleClass('opened-sidebar');
+        $('.overlay-sidebar').toggleClass('opened-sidebar');
+        event.preventDefault();
     });
 
 });

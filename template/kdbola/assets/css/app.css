@@ -334,6 +334,12 @@ body.main {
   height: 100%;
 }
 
+.border-banner {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 10px solid #ededed;
+}
+
 @font-face {
   font-family: 'SegoeUI';
   src: url("../font/SegoeUI.woff") format("woff");
@@ -717,7 +723,7 @@ body.main {
 }
 
 .content-page .content-pages-headline .image-headline-page img {
-  width: 751px;
+  width: 100%;
   height: 375px;
   padding: 10px 0;
 }
@@ -828,7 +834,7 @@ body.main {
 .content-page .related-content .related-content-box {
   font: 18px/1.65em SegoeUI;
   color: #333333;
-  width: 582px;
+  width: 100%;
 }
 
 .content-page .related-content .related-content-box .related-content-item {
