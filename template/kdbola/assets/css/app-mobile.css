@@ -2,9 +2,6 @@
   .link-title-head-bt {
     display: none;
   }
-  .overlay-sidebar, .overlay-side-bar {
-    display: none;
-  }
   .ads-space-container > .ads-banner {
     height: 65px;
     padding: 0 15px 0 15px;
@@ -14,6 +11,72 @@
   }
   .content-page h2 {
     font-size: 1.2rem;
+  }
+  .turn-to-sidebar.opened-sidebar {
+    left: 0;
+  }
+  .overlay-sidebar {
+    position: fixed;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .overlay-sidebar.opened-sidebar {
+    z-index: 900;
+    left: 330px;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .overlay-sidebar > a {
+    display: block;
+    width: 46px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: #dbd950;
+  }
+  .overlay-sidebar > a .fa-times {
+    transform: translateY(20%);
+  }
+  .overlay-side-bar.opened-sidebar {
+    left: 0;
+    display: block;
+  }
+  .overlay-side-bar {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    transition: all 0.3s ease;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 330px;
+    background: #121212;
+    height: 100vh;
+  }
+  .overlay-side-bar .overlay-container {
+    padding: 20px 20px 0px 20px;
+  }
+  .overlay-side-bar .overlay-container hr {
+    border-top: 1px solid #363636;
+  }
+  .overlay-side-bar .main-sidebar, .overlay-side-bar .sub-sidebar {
+    list-style: none;
+    padding: 0;
+  }
+  .overlay-side-bar .main-sidebar-item, .overlay-side-bar .sub-sidebar-item {
+    padding: 10px 0;
+  }
+  .overlay-side-bar .main-sidebar-item a span, .overlay-side-bar .sub-sidebar-item a span {
+    color: white;
+    font-family: SegoeUI;
+    padding-left: 20px;
+    font-size: 17px;
+  }
+  .overlay-side-bar .main-sidebar-item a img, .overlay-side-bar .sub-sidebar-item a img {
+    width: 30px;
+    height: 30px;
   }
   .nav-bar-mobile {
     width: auto;
@@ -218,6 +281,51 @@
     font-weight: bold;
     color: black;
   }
+}
+
+@media (max-width: 475px) {
+  .topnews-wraper {
+    height: 200px !important;
+  }
+  .topnews-wraper .topnews-content-slide {
+    width: 176px !important;
+    height: 170px !important;
+  }
+  .full-topnews .category-topnews {
+    padding: 90px 16px;
+  }
+  .berita-populer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-desktop {
+    display: none;
+  }
+  .social-mobile {
+    display: block;
+  }
+  .image-headline-page img {
+    height: 260px;
+    padding: 10px 0;
+  }
+  .image-headline-page {
+    margin: 0 -15px 0 -15px;
+  }
+  .list-tag li:first-child {
+    display: none;
+  }
+  .content-page .article-body-first p, .content-page .article-body-paging p {
+    font-size: 16px;
+  }
+  .thumbs-large .category-thumbs-large {
+    font-size: 11px;
+    bottom: 65px;
+  }
+  .thumbs-large .title-thumbs-large {
+    font-size: 22px;
+  }
   .bt-content-wraper {
     margin: 0;
   }
@@ -245,14 +353,8 @@
   .content .berita-terkini .header-content-bt .category {
     font-size: 12px;
   }
-  .content .berita-terkini .header-content-bt .summary-content-bt {
-    display: none;
-  }
   .content .berita-terkini .header-content-bt .head-title-content-bt {
     font-size: 12px;
-  }
-  .berita-populer {
-    padding: 0 15px 0 15px;
   }
   .index-button {
     width: 200px;
@@ -262,40 +364,25 @@
     font-size: 13px;
     padding: 10px 10px;
   }
-  .content-bp > .header-content-bp {
-    padding-left: 15px;
-  }
   .content-bp > .thumbnail-bp {
     width: 100%;
-    height: 100%;
+  }
+  .category {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .summary-content-bt {
+    display: none;
+  }
+  .content-bp > .header-content-bp {
+    padding-left: 15px;
   }
   .title-vid-bv:nth-child(2) {
     padding-left: 15px;
   }
-}
-
-@media (max-width: 475px) {
-  .topnews-wraper {
-    height: 200px !important;
-  }
-  .topnews-wraper .topnews-content-slide {
-    width: 176px !important;
-    height: 170px !important;
-  }
-  .full-topnews .category-topnews {
-    padding: 90px 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .image-headline-page img {
-    height: 260px;
-    padding: 10px 0;
-  }
-  .image-headline-page {
-    margin: 0 -15px 0 -15px;
-  }
-  .list-tag li:first-child {
-    display: none;
+  .berita-populer {
+    padding: 0 15px 0 15px;
   }
 }

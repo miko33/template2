@@ -52,7 +52,8 @@ body {
     left: 0;
     @media (max-width: 768px) {
       &.opened-sidebar {
-        left: 250px;
+        left: 330px;
+        overflow: hidden;
       }
     }
   }

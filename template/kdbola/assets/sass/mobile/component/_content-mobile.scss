@@ -1,6 +1,12 @@
 
 @media (max-width:768px)
 {
+        .social-desktop {
+            display: none;
+        }
+        .social-mobile{
+            display: block;
+        }
         .image-headline-page img{
             height: 260px;
             padding: 10px 0;
@@ -14,4 +20,83 @@
             display: none;
         }
 
+        .content-page .article-body-first p,.content-page .article-body-paging p{
+            font-size: 16px;
+        }
+
+        .thumbs-large .category-thumbs-large{
+            font-size: 11px;
+            bottom: 65px;
+        }
+        .thumbs-large .title-thumbs-large {
+            font-size: 22px;
+        }
+
+        .bt-content-wraper {
+            margin: 0;
+        }
+    
+        .title-head-bt a::after{
+            background-image: url(../img/misc/arrow-elipse.png);
+            display: inline-block;
+            height: 20px;
+            background-repeat: no-repeat;
+            content: "";
+            padding-left: 22px;
+            margin-left: 5px;
+        }
+    
+        .content {
+            margin: 0;
+    
+            .berita-terkini {
+                padding: 0;
+    
+                .thumbnail-bt{ 
+                    width: 150px;
+                }
+                .header-content-bt {
+                    padding: 0 0 0 15px;
+                    .category {
+                        font-size: 12px;
+                    }
+                    .head-title-content-bt {
+                        font-size: 12px;
+                    }
+                }
+    
+            }
+        }
+
+        .index-button{
+            width: 200px;
+            margin: 10px auto;
+            .index-button-link{
+                font-size: 13px;
+                padding: 10px 10px;
+            }
+        }
+        .content-bp > .thumbnail-bp {
+            width: 100%;
+        }
+
+        .category {
+            border-radius: 0;
+        }
+}
+
+@media (max-width:425px) {
+    .summary-content-bt {
+        display: none;
+    }
+
+    .content-bp > .header-content-bp{
+        padding-left: 15px;
+    }
+    .title-vid-bv:nth-child(2) {
+        padding-left: 15px;
+    }
+    .berita-populer{
+        padding: 0 15px 0 15px;
+    }
 }

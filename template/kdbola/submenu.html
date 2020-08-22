@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/app-mobile.css">
     <link rel="stylesheet" href="./assets/css/all.css">
 
 
@@ -25,6 +26,11 @@
     <title>KD Bola</title>
 </head>
 <body class="main">
+    <div class="overlay-sidebar">
+        <a href="javascript:void(0);" class="bar-trigger">
+            <i class="fas fa-times fa-2x"></i>
+        </a>
+    </div>
         <div class="body-container">
             <section id="header">
                 <button onclick="topFunction()" id="backTotop" title="Back To Top"><i class="fas fa-chevron-up"></i></button>
@@ -38,7 +44,7 @@
                             </div>
                             <div class="col-sm-10 sticky-navbar">
                                 <ul class="nav full-expand-nav-sticky">
-                                    <li class="menu sticky-menu">
+                                    <li class="menu sticky-menu active">
                                          <a href="">home</a> 
                                     </li>
                                     <li class="menu sticky-menu">
@@ -87,7 +93,7 @@
                                             <span><i class="fas fa-search fa-xs" style="padding-right: 3px;"></i>Cari</span>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <form action="">
+                                            <form action="" id="search">
                                                 <input type="input" class="search-input" value="" placeholder="Cari di kdbola.com">
                                             </form>
                                         </div>
@@ -107,7 +113,7 @@
                             </a>
                         </div>
                         <div class="col-md-6 search-bar">
-                            <form class="search-form">
+                            <form class="search-form" id="search">
                                 <input type="input" class="search-input" value="" placeholder="Topik Berita apa yang ingin Anda cari?">
                                 <i class="fas fa-search"></i>
                                 
@@ -165,6 +171,160 @@
                                 </div>
                         </section>
                     </div>
+                    <div class="header-mobile">
+                        <div class="row nav-bar-mobile">
+                            <div class="col-3 bar-trigger" style="width: 100%;">
+                                <a href="" class="top-bar-menu sidebar-trigger">
+                                    <img src="./assets/img/misc/top-menu-bar.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-6 logo-mobile">
+                                <a href="" class="link-logo-mobile">
+                                <img src="./assets/img/misc/kdbolalogo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a id="search-more-mobile" class="i-nav-cari"><i class="fas fa-search fa-2x"></i></a>
+                            </div>
+                            <div class="col-12 overlay-side-bar">
+                                <div class="overlay-container">
+                                    <div class="sidebar">
+                                        <ul class="main-sidebar">
+                                            <li class="main-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/headline.png" alt="headline">
+                                                    <span>Headlines</span>
+                                                </a>
+                                            </li>
+                                            <li class="main-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/berita-terkini.png" alt="berita-terkini">
+                                                    <span>Berita Terkini</span>
+                                                </a>
+                                            </li>
+                                            <li class="main-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/berita-populer.png" alt="berita-populer">
+                                                    <span>Berita Populer</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="sub-sidebar">
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/liga-indo.png" alt="">
+                                                    <span>Lliga Indonesia</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/liga-eng.png" alt="">
+                                                    <span>Liga Inggris</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/liga-spain.png" alt="">
+                                                    <span>Liga Spanyol</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/liga-jerman.png" alt="">
+                                                    <span>LIga Jerman</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/liga-itali.png" alt="">
+                                                    <span>Liga Italia</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/dunia.png" alt="">
+                                                    <span> Dunia</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/motogp.png" alt="">
+                                                    <span>Moto GP</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/nba.png" alt="">
+                                                    <span>NBA</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/e-sport.png" alt="">
+                                                    <span>E-Sport</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/ragam.png" alt="">
+                                                    <span>Ragam</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/live-score.png" alt="">
+                                                    <span>Livescore</span>
+                                                </a>
+                                            </li>
+                                            <li class="sub-sidebar-item">
+                                                <a href="">
+                                                    <img src="./assets/img/ic-nav/video.png" alt="">
+                                                    <span>Video</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row sub-nav-mobile">
+                            <div class="search-mobile">
+                                <form action="" class="search-form-mobile">
+                                    <input type="text" class="search-input-mobile" placeholder="Berita apa yang Anda cari hari ini?">
+                                </form>
+                            </div>
+                            <div class="top-nav col-12">
+                                <ul class="top-nav-list">
+                                    <li class="top-nav-item"> 
+                                        <a href="" class="top-nav-item__link">
+                                            <span> Headlines</span>
+                                        </a>
+                                        </li>
+                                    <li class="top-nav-item"> 
+                                        <a href="" class="top-nav-item__link">
+                                            <span> Terkini</span>
+                                        </a>
+                                        </li>
+                                    <li class="top-nav-item"> 
+                                        <a href="" class="top-nav-item__link">
+                                            <span> Populer</span>
+                                        </a>
+                                        </li>
+                                    <li class="top-nav-item"> 
+                                        <a href="" class="top-nav-item__link">
+                                            <span> livescore</span>
+                                        </a>
+                                        </li>
+                                    <li class="top-nav-item"> 
+                                        <a href="" class="top-nav-item__link">
+                                            <span> Indonesia</span>
+                                        </a>
+                                        </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
             <div class="container news-container">
@@ -188,8 +348,8 @@
             <section id="content">
                 <div class="container main-content">
                     <div class="row content">
-                        <div class="col-sm-9 berita-terkini">
-                            <div class="row">
+                        <div class="col-lg-9 col-sm-8 berita-terkini">
+                            <div class="row bt-content-wraper">
                             <div class="col-sm-12 bt-header-border" >
                                 <label class="title-head-bt"> <a href=""> Liga Inggris</a></label>
                             </div>
@@ -208,12 +368,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -224,12 +384,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -240,12 +400,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -256,12 +416,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -272,12 +432,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -288,12 +448,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -304,12 +464,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -320,12 +480,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -336,12 +496,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -352,12 +512,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -368,12 +528,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -384,12 +544,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -400,12 +560,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content2.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -416,12 +576,12 @@
                                     </div>
                                 </div>
                                 <div class="row content-bt">
-                                    <div class="col-sm-4 thumbnail-bt">
+                                    <div class="col-sm-4 col-5 thumbnail-bt">
                                         <a href="" class="link-thumbs-bt">
                                             <img src="./assets/img/content/img-content1.png" alt="" class="thumbs-bt">
                                         </a>
                                     </div>
-                                    <div class="col-sm-8 header-content-bt">
+                                    <div class="col-sm-8 col-7 header-content-bt">
                                         <div class="btn btn-link category">Liga Indonesia</div>
                                         <label class="time-content">1 Jam 32 Menit Lalu</label>
                                         <h4 class="head-title-content-bt"> <a href="" class="head-title-content-link-bt">Pegang Rekor Gol Tercepat Liga 1, Osas Saha Berikan Tips Membobol Gawang Lawan</a></h4>
@@ -436,11 +596,11 @@
                                       <li class="page-item disabled">
                                         <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
                                       </li>
-                                      <li class="page-item"><a class="page-link" href="#" style="border: 1px solid #ededed;">1</a></li>
-                                      <li class="page-item "><a class="page-link" href="#" style=" border: 1px solid #ededed;">2</a></li>
-                                      <li class="page-item active"><a class="page-link" href="#" style="border: 1px solid #ededed;">3</a></li>
-                                      <li class="page-item"><a class="page-link" href="#" style="border: 1px solid #ededed;">4</a></li>
-                                      <li class="page-item"><a class="page-link" href="#" style="border: 1px solid #ededed;">5</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">5</a></li>
                                       <li class="page-item">
                                         <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
                                       </li>
@@ -449,7 +609,7 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 berita-populer" style="padding-left: 40px;">
+                        <div class="col-lg-3 col-sm-4 berita-populer" style="padding-left: 40px;">
                             <div class="row">
                             <div class="col-sm-12 bp-header-border">
                                 <label class="title-head-bp"> <a href="">Berita Populer <img src="./assets/img/misc/arrow-elipse.png" alt=""></a></label>
@@ -622,7 +782,7 @@
             </section>
 
             <section class="footer" style="background-color: black;">
-                <div class="footer-container container" style="padding: 10px 10px;">
+                <div class="footer-container container" >
                     <div class="row">
                         <div class="col-sm-2">
                             <a href="" class="footer-logo-link">
