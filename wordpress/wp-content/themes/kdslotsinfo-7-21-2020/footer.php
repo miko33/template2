@@ -15,7 +15,7 @@
     <div class="centered-text white-normal">
 	Bank Online (<div class="indicator-bank online"></div>)
 	Bank Gangguan (<div class="indicator-bank trouble"></div>)
-	Bank Offline (<div class="indicator-bank offline"></div>)
+	Bank Offline (<div class="indicator-bank offline"></div>) 
     </div>
 </div>
 

@@ -1,5 +1,5 @@
 .maintenance-page {
-  background-image: url(../img/maintenance/maintenance-bg.jpg);
+  background-image: url(../img/maintenance/bg-maintenance.jpg);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,8 +31,12 @@
 }
 
 .maintenance-page .mt-lang-notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .maintenance-page .mt-lang-notice .lang-notice-item {
@@ -41,8 +45,12 @@
 
 .maintenance-page .mt-lang-notice ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .maintenance-page .mt-lang-notice ul li {

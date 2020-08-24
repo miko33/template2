@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
 
-  
+
   $( ".dropdown-toggle" ).click(function() {
     $('.dropdown-menu').toggleClass('show');
   });
@@ -20,18 +20,18 @@ $( document ).ready(function() {
         pauseOnHover: true
     });
 
-    
-    $( ".sidebar-trigger" ).click(function(ev) {
+
+    $( ".sidebar-trigger" ).click(function() {
         $('.turn-to-sidebar').toggleClass('opened-sidebar');
         $('body.main').toggleClass('opened-sidebar');
         $('.overlay-sidebar').toggleClass('opened-sidebar');
-        ev.preventDefault();
+        .preventDefault();
     });
             //end marquee
 
-           
 
-       
+
+
 
 document.addEventListener('readystatechange', (event) => {
   if(document.readyState === 'interactive') {
@@ -52,16 +52,16 @@ window.addEventListener('load', (event) => {
     $("body").removeClass('modal-open');
   }, 2000);
 });
-  
-    
+
+
  // ///start main slider owlcarousel
- 
+
  var time = 7; // time in seconds
 
  var $progressBar,
-     $bar, 
-     $elem, 
-     isPause, 
+     $bar,
+     $elem,
+     isPause,
      tick,
      percentTime;
  //Init the carousel
@@ -114,13 +114,13 @@ function interval() {
       });
   //if percentTime is equal or greater than 100
   if(percentTime >= 100){
-      //slide to next item 
+      //slide to next item
       $elem.trigger('owl.next')
   }
   }
 }
 
-//pause while dragging 
+//pause while dragging
 function pauseOnDragging(){
   isPause = true;
 }
@@ -133,7 +133,7 @@ function moved(){
   start();
 }
 
-//uncomment this to make pause on mouseover 
+//uncomment this to make pause on mouseover
 $("#owl-demo").on('mouseover',function(){
 isPause = true;
 })
@@ -144,4 +144,3 @@ isPause = false;
 
 
 });
-

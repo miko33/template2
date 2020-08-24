@@ -1,4 +1,4 @@
-<div class="nav-container">
+<!-- <div class="nav-container">
     <ul class="nav equal-width-nav">
         <li id="home" class="active">
             <a href="#">
@@ -48,8 +48,8 @@
             </a>
         </li>
     </ul>
-</div>
-<?php
+</div> -->
+<?php 
 	$args = array(
         'container_class' => 'nav-container',
 		'menu_class' => 'nav equal-width-nav',

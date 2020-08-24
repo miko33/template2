@@ -1,0 +1,72 @@
+/* ===================== Device Style ===================== */
+@media (min-width: 992px) and (max-width: 1024px) {
+    // #content .container {
+    //   width: 940px;
+    // }
+  }
+  
+  @media (min-width: 544px) {
+    .container {
+      max-width: 1030px;
+      // width: 1030px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 1030px;
+      // width: 1030px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 990px;
+      // width: 1030px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .container {
+      width: 990px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width:  990px;
+    }
+  }
+  
+  .row.no-gutters > div {
+    padding: 0;
+}
+// @-webkit-keyframes marqueeAnimation-6041615  { 100%  {margin-left:-4978.125px}}@-webkit-keyframes marqueeAnimation-60416150  { 100%  {margin-left:-4978.125px}}
+
+body {
+  &.main {
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    left: 0;
+    @media (max-width: 768px) {
+      &.opened-sidebar {
+        left: 330px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.body-container {
+  min-height: 100vh;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  position: relative;
+  // right: 70%;
+
+  
+}
