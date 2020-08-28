@@ -15,7 +15,7 @@ $ ( document).ready(function(){
 
 // if($(window).width() < 780) {
 //   console.log($(window).width());
-//   alert('tepe')
+//   // alert('tepe')
 //   $('.fixed-navbar').addClass('none');
 
 // }else if ($(window).width() > 780) {
@@ -28,7 +28,7 @@ $ ( document).ready(function(){
 //         $('.fixed-navbar').removeClass('none');
 //     }
 //     });
-//     alert('tape')
+//     // alert('tape')
 // }
 // alert('pepex')
 
@@ -60,6 +60,7 @@ if($(window).width() < 770) {
   $('.topnews-container').removeClass('show');
 }
 
+// alert ('pepex')
 // (function($){
 //   $('#thumbcarousel').carousel(0);
 //   var $thumbItems = $('#thumbcarousel .item');

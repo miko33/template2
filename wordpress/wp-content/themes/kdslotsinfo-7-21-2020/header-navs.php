@@ -49,7 +49,7 @@
         </li>
     </ul>
 </div> -->
-<?php 
+<?php
 	$args = array(
         'container_class' => 'nav-container',
 		'menu_class' => 'nav equal-width-nav',

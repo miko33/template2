@@ -43,12 +43,7 @@
             </a>
         </div>
 
-        <div class="splash-screen">
-            <div class="splash-logo"></div>
-            <div class="splash-progress">
-              <div class="splash-bar" style="width: 0%;">  </div>
-            </div>
-        </div>
+
 
         <div class="body-container">
             <!-- Section Header -->
@@ -58,34 +53,34 @@
             <section id="content">
                 <div class="container pad-container">
                     <div class="row no-gutter text-glow">
-                        <?php global 
+                        <?php global
                             $wp;
                             $link = add_query_arg( $wp->query_vars, home_url( $wp->request ) );
                             if($link == 'https://kdslots.info')
                                 {
                                     get_header('slider');
                                 }
-                                else 
+                                else
                                 {
-                                    
+
                                 }
                         ?>
 
-                    
+
                         <!-- Footer -->
 			                <?php get_footer() ?>
                         <!-- End Footer -->
-                        
+
                         <!-- Element Content -->
                         <div class="col-md-12 order-content">
-                        
-                            <?php 
+
+                            <?php
                                 if( have_posts() ):
-                                while( have_posts() ): the_post(); 
+                                while( have_posts() ): the_post();
                             ?>
                                 <?php the_content(); ?>
 
-                            <?php 
+                            <?php
                                 endwhile;
                                 else:
                                 echo 'tidak ada post';

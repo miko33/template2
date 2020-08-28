@@ -78,12 +78,20 @@
     width: 30px;
     height: 30px;
   }
+  .wrapper-sticky-mobile {
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #111111;
+  }
   .nav-bar-mobile {
     width: auto;
-    position: sticky;
     z-index: 100;
+    position: relative;
     background-color: #111111;
-    padding: 20px 0 15px;
+    padding: 40px 0 15px;
   }
   .nav-bar-mobile .top-bar-menu {
     padding-top: 5px;
