@@ -39,17 +39,35 @@ class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
 add_theme_support( 'post-thumbnails' );
 add_image_size('thumb-bt');
 
-// function get_excerpt_length() {
-//     return 20;
-// }
-
-function custom_excerpt_length( $length ) {
-	return 19;
+function get_excerpt_length() {
+    return 20;
 }
+
+// function custom_excerpt_length( $length ) {
+// 	return 19;
+// }
 
 function return_excerpt_text(){
     return '';
 }
 
 add_filter('excerpt_more', 'return_excerpt_text');
-add_filter('excerpt_length', 'custom_excerpt_length', 99);
+add_filter('excerpt_length', 'get_excerpt_length');
+
+// function meks_time_ago() {
+// 	return human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ).' '.__( 'ago' );
+// }
+add_filter('the_time', 'dynamictime');
+
+function dynamictime() {
+    global $post;
+    $date = $post->post_date;
+    $time = get_post_time('G', true, $post);
+    $mytime = time() - $time;
+    if($mytime > 0 && $mytime < 7*24*60*60)
+      $mytimestamp = sprintf(__('%s ago'), human_time_diff($time));
+    else
+      
+      $mytimestamp = date_format(new DateTime($date) ,"d-M-Y h:i");
+    return $mytimestamp;
+  }

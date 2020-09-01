@@ -226,7 +226,7 @@
                                     </div>
                                     <div class="col-sm-8 col-7 header-content-bt">
                                         <?php the_category(' '); ?>
-                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
+                                        <label class="time-content"> <?php the_time()  ?></label>
                                         <h4 class="head-title-content-bt"> <a href="<?php the_permalink(); ?>" class="head-title-content-link-bt"><?php the_title(); ?></a></h4>
                                         
                                         <p class="summary-content-bt">

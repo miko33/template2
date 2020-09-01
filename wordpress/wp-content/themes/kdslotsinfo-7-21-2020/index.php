@@ -67,6 +67,7 @@
                         ?>
 
 
+
                         <!-- Footer -->
 			                <?php get_footer() ?>
                         <!-- End Footer -->
