@@ -27,12 +27,12 @@ class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
     function start_lvl( &$output, $depth = 0, $args = array() ) 
     {
         $indent = str_repeat("\t", $depth);
-        $output .= "\n$indent<div class='dropdown-menu'><ul class='sub-menu'>\n";
+        $output .= "\n$indent<ul class='dropdown-menu'>\n";
     }
     function end_lvl( &$output, $depth = 0, $args = array() ) 
     {
         $indent = str_repeat("\t", $depth);
-        $output .= "$indent</ul></div>\n";
+        $output .= "$indent</ul>\n";
     }
 }
 
@@ -44,11 +44,15 @@ function return_excerpt_text(){
     return '';
 }
 
-function get_excerpt_length(){
-  return 5;
+function new_excerpt_more( $more ) {
+  return '';
 }
 
-// add_filter('excerpt_more', 'return_excerpt_text');
+function get_excerpt_length(){
+  return 19;
+}
+
+add_filter('excerpt_more', 'return_excerpt_text');
 add_filter('excerpt_length', 'get_excerpt_length');
 add_filter('get_the_excerpt','clean_excerpt');
 add_filter('the_time', 'dynamictime');
@@ -64,7 +68,7 @@ function dynamictime() {
       $mytimestamp = sprintf(__('%s ago'), human_time_diff($time));
     else
       
-      $mytimestamp = date_format(new DateTime($date) ,"d-M-Y h:i");
+      $mytimestamp = date_format(new DateTime($date) ,"d M Y h:i");
     return $mytimestamp;
   }
 
@@ -72,7 +76,7 @@ function dynamictime() {
 
   function clean_excerpt( $excerpt) {
 
-        $excerpt = str_ireplace(array('.com','—','-','–','—','s'),'' ,$excerpt);
+        $excerpt = str_ireplace(array('kdbola.com','&ndash;','&#8211;','&#8212'),'' ,$excerpt);
 
         //  var_dump($excerpt);
        return $excerpt;
