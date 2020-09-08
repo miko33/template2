@@ -66,7 +66,7 @@
                                     </div>
                                 </div>
                             </ul>
-
+                            <?php get_header('menus') ?>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
             <div class="container head-container">
                 <div class="row header">
                     <div class="col-md-6 logo">
-                        <a href="#" class="logo-icon">
+                        <a href="<?php echo home_url(); ?>" class="logo-icon">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/kdbolalogo.png" alt="">
                         </a>
                     </div>

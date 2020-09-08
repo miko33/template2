@@ -10,7 +10,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <title>KD Bola</title>
+    <title><?php bloginfo('name') ?></title>
 </head>
 <body class="main">
     <div class="overlay-sidebar">
@@ -210,14 +210,17 @@
                     <div class="row content">
                         <div class="col-lg-9 col-sm-8 berita-terkini">
                             <div class="row bt-content-wraper">
+                            <?php
+                                    if( have_posts() ):
+                            ?>
                             <div class="col-sm-12 bt-header-border" >
                                 <label class="title-head-bt"> <a href=""> Berita Terkini</a></label>
                                 <label class="link-title-head-bt"> <a href="" class="">Lihat Indeks Berita Hari ini <i class="fas fa-chevron-right fa-sm"></i></a></label>
                             </div>
                             <?php
-                                    if( have_posts() ):
-                                    while( have_posts() ): the_post();
+                                while( have_posts() ): the_post();
                             ?>
+
                                 <div class="row content-bt">                
                                     <div class="col-sm-4  thumbnail-bt">
                                         <a href="<?php the_permalink(); ?>" class="link-thumbs-bt">
@@ -249,7 +252,7 @@
                         <div class="col-lg-3 col-sm-4  berita-populer" >
                             <div class="row">
                             <div class="col-sm-12 bp-header-border">
-                                <label class="title-head-bp"> <a href="">Berita Populer <img src="./assets/img/misc/arrow-elipse.png" alt=""></a></label>
+                                <label class="title-head-bp"> <a href="">Berita Populer <img src="<?php bloginfo('template_url'); ?> /assets/img/misc/arrow-elipse.png" alt=""></a></label>
                             </div>
                                 <div class="row content-bp">
                                     <div class="col-sm-12 col-5 thumbnail-bp">
