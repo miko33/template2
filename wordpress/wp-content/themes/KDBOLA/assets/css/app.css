@@ -772,6 +772,17 @@ body.main {
   padding: 10px 0;
 }
 
+.content-page .content-pages-headline .wp-block-image {
+  width: 100%;
+  padding: 10px 0;
+  height: 370px;
+}
+
+.content-page .content-pages-headline .wp-block-image > img {
+  width: 100%;
+  height: 100%;
+}
+
 .content-page .article-body-first {
   margin-top: 10px;
 }
@@ -780,7 +791,7 @@ body.main {
   font-family: SegoeUI;
   margin: 0;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 17px;
   color: #161616;
   line-height: 2em;
   margin-top: 10px;
@@ -888,7 +899,6 @@ body.main {
 .content-page .comment-header {
   font-family: SegoeBold;
   font-weight: bold;
-  margin-bottom: 250px;
 }
 
 .index-button {

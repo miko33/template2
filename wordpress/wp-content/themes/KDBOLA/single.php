@@ -13,6 +13,8 @@
     <title>KD Bola</title>
 </head>
 <body class="main">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v8.0&appId=607341153242438&autoLogAppEvents=1" nonce="6WchhMxi"></script>
     <div class="overlay-sidebar">
         <a href="javascript:void(0);" class="bar-trigger">
             <i class="fas fa-times fa-2x"></i>
@@ -91,23 +93,9 @@
                                         </div>
                                     </div>
                                     <div class="article-body-first">
-                                        <p>
-                                            <b>KDbola.com </b>Dalam sepakbola, chemistry antar pemain itu sangat penting. Karena chemistry
-                                            tersebutlah yang mampu menciptakan permainan yang bagus di lapangan.
-                                        </p>
-                                        <p>
-                                            Biasanya di setiap tim ada satu atau dua pemain yang memiliki chemistry yang kuat. Mereka bisa mengerti satu sama lain dengan baik sehingga kombinasi keduanya bisa menjadi momok yang mematikan untuk setiap tim lawan yang mereka hadapi.
-                                        </p>
-                                        <p>Mari kita ambil contoh RB Leipzig musim lalu. Ada kombinasi mematikan antara Emil Forsberg,
-                                            sang raja assist dengan mesin haus gol Die Roten Bulen, Timo Werner. Hasilnya? RB Leipzig
-                                            benar-benar menjadi tim yang subur dalam mencetak gol di Bundesliga.
-                                        </p>
-                                        <p>
-                                            Nah kombinasi-kombinasi ajaib bin menakutkan itu juga kembali terjadi di musim 2019/2020 ini. Kami melihat ada setidaknya tiga tandem yang sangat berbahaya di Bundesliga saat ini.
-                                        </p>
-                                        <p>Siapa saja mereka? Yuk intip daftarnya di bawah ini.</p>
+                                    <?php the_content() ?>
                                     </div>
-                                    <div class="article-body-paging">
+                                    <!-- <div class="article-body-paging">
                                         <div class="break__cont">
                                             <small>1 dari 3 halaman</small>
                                         </div>
@@ -124,8 +112,8 @@
                                             sebelum menutup skor pertandingan. Musim ini, pasangan asal Prancis itu adalah kunci
                                             keberhasilan Monchengladbach: Plea telah mencetak 10 gol dan menyediakan 10 assist,
                                             sedangkan Thuram 10 gol dan 8 assist.</p>
-                                    </div>
-                                    <div class="article-body-paging">
+                                    </div> -->
+                                    <!-- <div class="article-body-paging">
                                         <div class="break__cont">
                                             <small>2 dari 3 halaman</small>
                                         </div>
@@ -143,8 +131,8 @@
                                             Champions sepanjang musim 2019/2020.</p>
                                         <p>Dengan status pinjaman Hakimi dari Real Madrid yang segera berakhir, hari-hari indah bersama
                                             keduanga mungkin akan pula kandas. Jadi, nikmatilah selagi bisa.</p>
-                                    </div>
-                                    <div class="article-body-paging">
+                                    </div> -->
+                                    <!-- <div class="article-body-paging">
                                         <div class="break__cont">
                                             <small>3 dari 3 halaman</small>
                                         </div>
@@ -163,7 +151,7 @@
                                             menyerang. Khusus untuk Kimmich, ia bergabung dengan Bayern dari RB Leipzig di bursa
                                             transfer musim dingin tahun 2015 dan telah tampil sebanyak 210 kali untuk klub - memenangkan
                                             empat gelar Bundesliga dan dua Piala Jerman di sepanjang jalan.</p>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="tag-box">
                                     <h3 class="related-content-hd">
@@ -172,17 +160,9 @@
                                     <div>
                                         <ul class="list-tag">
                                             <li> <a href=""> Tags </a></li>
-                                            <li> <a href=""> Bundesliga</a></li>
-                                            <li> <a href=""> Bayern Munich</a></li>
-                                            <li> <a href=""> Borussia Dortmundt</a></li>
-                                            <li> <a href=""> Burossia Monchengladbach</a></li>
-                                            <li> <a href=""> THIAGO ALCANTARA</a></li>
-                                            <li> <a href=""> JOSHUA KIMMICH</a></li>
-                                            <li> <a href=""> RAPHAEL GUERREIRO</a></li>
-                                            <li> <a href=""> ALASSANE PLEA</a></li>
-                                            <li> <a href=""> ACHARAF HAKIMI</a></li>
-                                            <li> <a href=""> MARCUS THURAM</a></li>
+                                            <?php the_tags( '<li>', '</li><li>', '</li>' ); ?>
                                         </ul>
+                                        
                                     </div>
 
                                 </div>
@@ -217,6 +197,7 @@
                                     <h3 class="comment-header">
                                         KOMENTAR
                                     </h3>
+                                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
                                 </div>
                             </div>
                             </div>
