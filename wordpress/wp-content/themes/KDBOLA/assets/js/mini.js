@@ -10,8 +10,10 @@ $ ( document).ready(function(){
         $('.overlay-sidebar').toggleClass('opened-sidebar');
         event.preventDefault();
     });
-
 });
+
+
+
 
 // if($(window).width() < 780) {
 //   console.log($(window).width());

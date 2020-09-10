@@ -44,9 +44,6 @@ function return_excerpt_text(){
     return '';
 }
 
-function new_excerpt_more( $more ) {
-  return '';
-}
 
 function get_excerpt_length(){
   return 19;
@@ -54,8 +51,7 @@ function get_excerpt_length(){
 
 add_filter('excerpt_more', 'return_excerpt_text');
 add_filter('excerpt_length', 'get_excerpt_length');
-add_filter('get_the_excerpt','clean_excerpt');
-add_filter('the_time', 'dynamictime');
+
 
 
 
@@ -72,6 +68,8 @@ function dynamictime() {
     return $mytimestamp;
   }
 
+  add_filter('the_time', 'dynamictime');
+
 
 
   function clean_excerpt( $excerpt) {
@@ -81,6 +79,19 @@ function dynamictime() {
         //  var_dump($excerpt);
        return $excerpt;
   }
+  add_filter('get_the_excerpt','clean_excerpt');
+
+
+  function widget_setup(){
+      register_sidebar(array(
+        'name' => "sidebar pertama",
+        'id' => "sidebar1"
+      ));
+
+  }
+
+  add_action('widgets_init','widget_setup');
+
 
   
 

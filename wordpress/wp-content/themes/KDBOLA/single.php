@@ -62,15 +62,7 @@
                                 <span>| <?php the_time() ?></span>
                                 <div class="bar-social-share social-desktop">
                                     <div class="social-share">
-                                        <ul class="list-social">
-                                            <li><a href="" class="sc-fb"></a></li>
-                                            <li><a href="" class="sc-tw"></a></li>
-                                            <li><a href="" class="sc-wa"></a></li>
-                                            <li>
-                                                <dt>980</dt>
-                                                <dd>SHARES</dd>
-                                            </li>
-                                        </ul>
+                                        <?php dynamic_sidebar('sidebar1') ?>
                                     </div>
                                 </div>
 
@@ -81,15 +73,7 @@
                                     </div>
                                     <div class="bar-social-share social-mobile">
                                         <div class="social-share">
-                                            <ul class="list-social">
-                                                <li><a href="" class="sc-fb"></a></li>
-                                                <li><a href="" class="sc-tw"></a></li>
-                                                <li><a href="" class="sc-wa"></a></li>
-                                                <li>
-                                                    <dt>980</dt>
-                                                    <dd>SHARES</dd>
-                                                </li>
-                                            </ul>
+                                        <?php dynamic_sidebar('sidebar1') ?>
                                         </div>
                                     </div>
                                     <div class="article-body-first">

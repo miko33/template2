@@ -7,21 +7,22 @@
         .social-mobile{
             display: block;
         }
-        .image-headline-page img{
-            height: 260px;
-            padding: 10px 0;
+        .wp-block-image {
+            height: auto !important;
+            img{
+                height: 260px !important;
+                padding: 10px 0;
+            }
         }
+
         
-        .image-headline-page{
-            margin: 0 -15px 0 -15px;
-        }
         
         .list-tag li:first-child{
             display: none;
         }
 
         .content-page .article-body-first p,.content-page .article-body-paging p{
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .thumbs-large .category-thumbs-large{
