@@ -10,7 +10,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <title>KD Bola</title>
+    <title><?php the_title() ?></title>
 </head>
 <body class="main">
 <div id="fb-root"></div>
@@ -176,6 +176,8 @@
                                             <a href="">Chef Thomas Muller, Raja Assist Bundesliga</a>
                                         </div>
                                     </div>
+
+                                    <?php dynamic_sidebar('sidebar2') ?>
                                 </div>
                                 <div class="content-comment">
                                     <h3 class="comment-header">

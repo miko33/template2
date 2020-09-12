@@ -395,9 +395,6 @@
             line-height: 2em;
             margin-top: 10px;
         }
-    }
-    .article-body-paging {
-
         .break__cont{
             position: relative;
             margin-top: 20px;
@@ -424,6 +421,10 @@
             padding: 0 10px;
             background-color: #fff;
         }
+    }
+    .article-body-paging {
+
+
 
         p {
             font-family: SegoeUI;
@@ -532,6 +533,6 @@
     display: none;
 }
 
-.widget_heateor_sss_sharing{
+.widget{
     list-style: none;
 }

@@ -84,8 +84,13 @@ function dynamictime() {
 
   function widget_setup(){
       register_sidebar(array(
-        'name' => "sidebar pertama",
+        'name' => "sidebar Social",
         'id' => "sidebar1"
+      ));
+
+      register_sidebar(array(
+        'name' => "sidebar Sort BY Tag",
+        'id' => "sidebar2"
       ));
 
   }
