@@ -49,10 +49,6 @@
                                         while( have_posts() ): the_post();
                             ?>
                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                      <li class="breadcrumb-item"><a href="#">KDBola.com</a></li>
-                                      <li class="breadcrumb-item active" aria-current="page">Liga Jerman</li>
-                                    </ol>
                                     <?php if (function_exists('the_breadcrumb')) the_breadcrumb(); ?>
                                     
                                 </nav>
@@ -68,7 +64,6 @@
 
                                 <div class="content-pages-headline">
                                     <div class="image-headline-page">
-                                            <!-- <img src="./assets/img/content/img-content6.png" alt=""> -->
                                             <?php the_post_thumbnail() ?>
                                     </div>
                                     <div class="bar-social-share social-mobile">
@@ -79,63 +74,6 @@
                                     <div class="article-body-first">
                                     <?php the_content() ?>
                                     </div>
-                                    <!-- <div class="article-body-paging">
-                                        <div class="break__cont">
-                                            <small>1 dari 3 halaman</small>
-                                        </div>
-                                        <div class="image-headline-page">
-                                            <img src="./assets/img/content/img-content6.png" alt="">
-                                        </div>
-                                        <h2>Plea x Thuram</h2>
-                                        <p>Duo Alassane Plea - Marcus Thuram selalu menjadi berita baik bagi fans Burossia
-                                            Monchengladbach, dan yang terbaru adalah saat mereka berhasil mengantarkan kemenangan
-                                            3-1 atas 1. FC Union Berlin akhir minggu lalu - kembali memperkuat posisi Die Fohlen dalam
-                                            perburuan tempat untuk kualifikasi Liga Champions musim berikutnya.</p>
-                                        <p>Di lapangan, Marcus Thuram adalah salah satu dari dua arsitek kemenangan tim yang bermarkas
-                                            di Borussia-Park tersebut, dengan rekan satu timnya Alassane PIUa, yang memberikan dua assist 
-                                            sebelum menutup skor pertandingan. Musim ini, pasangan asal Prancis itu adalah kunci
-                                            keberhasilan Monchengladbach: Plea telah mencetak 10 gol dan menyediakan 10 assist,
-                                            sedangkan Thuram 10 gol dan 8 assist.</p>
-                                    </div> -->
-                                    <!-- <div class="article-body-paging">
-                                        <div class="break__cont">
-                                            <small>2 dari 3 halaman</small>
-                                        </div>
-                                        <div class="image-headline-page">
-                                            <img src="./assets/img/content/img-content6.png" alt="">
-                                        </div>
-                                        <h2>Hakimi x Guerreiro</h2>
-                                        <p>Keputusan Lucien Favre untuk menggunakan back-five telah berubah manis bagi Borussia
-                                            Dortmund, menempatkan mereka di posisi yang kuat dalam perburuan gelar Bundesliga.
-                                            Sebagian besar dari kesuksesan itu ialah berkat dari terlepasnya segel cakra Achraf Hakimi dan 
-                                            Raphael Guerreiro.</p>
-                                        <p>Hakimi dengan 30 dan Guerreiro dengan 23; masing-masing menduduki peringkat keempat dan
-                                            kelima di Dortmund untuk banyaknya peluang yang diciptakan di Bundesliga musim ini. Yang libih
-                                            mengesankan lagi, bila digabungkan pasangan ini telah mencetak 14 gol di Bundesliga dan Liga
-                                            Champions sepanjang musim 2019/2020.</p>
-                                        <p>Dengan status pinjaman Hakimi dari Real Madrid yang segera berakhir, hari-hari indah bersama
-                                            keduanga mungkin akan pula kandas. Jadi, nikmatilah selagi bisa.</p>
-                                    </div> -->
-                                    <!-- <div class="article-body-paging">
-                                        <div class="break__cont">
-                                            <small>3 dari 3 halaman</small>
-                                        </div>
-                                        <div class="image-headline-page">
-                                            <img src="./assets/img/content/img-content6.png" alt="">
-                                        </div>
-                                        <h2>Kimmich x Alcantara</h2>
-                                        <p>Kimmich, yang sering dikerahkan sebagai bek sayap di beberapa musim lalu, kini menyaksikan
-                                            dirinya beranjak naik dalam nilai jual di bursa transfer dengan berhasil menjarungkan gol penting
-                                            dalam kemenangan 1-0 Die Bayern atas rival Borussia Dortmund di Der Klasiker akhir Mei lalu.</p>
-                                        <p>dan bersama Thiago Alcantara, saat ini keduanya adalah duo gelandang terbaik di dunia dan
-                                            bermain di level yang sangat tinggi. Secara teknis, mereka bersimbiosis secara sempurna dan
-                                            dalam mental bawah sadarnya mereka salalu ingin menguasai bola. Hal tersebut sangat penting
-                                            dimiliki bagi tim yang ingin memenangkan pertandingan dan menjadi juara di akhir musim.</p>
-                                        <p>Mereka tahu bagaimana memberi tim keseimbangan yang tepat, baik dalam bertahan maupun
-                                            menyerang. Khusus untuk Kimmich, ia bergabung dengan Bayern dari RB Leipzig di bursa
-                                            transfer musim dingin tahun 2015 dan telah tampil sebanyak 210 kali untuk klub - memenangkan
-                                            empat gelar Bundesliga dan dua Piala Jerman di sepanjang jalan.</p>
-                                    </div> -->
                                 </div>
                                 <div class="tag-box">
                                     <h3 class="related-content-hd">
@@ -158,25 +96,6 @@
                                 endif;
                             ?>
                                 <div class="related-content">
-                                    <h3 class="related-content-hd">
-                                        BACA JUGA :
-                                    </h3>
-                                    <div class="related-content-box">
-                                        <div class="related-content-item">
-                                            <a href="">Tidak Punya Pemain Kelas Dunia, MU Didesak Beli Jadon Sancho</a>
-                                        </div>
-                                        <div class="related-content-item">
-                                            <a href="">Timo Werner Sudah, Chelsea Kini Fokus Kejar Kai Havertz</a>
-                                        </div>
-                                        <div class="related-content-item">
-                                            <a href="">Chelsea Bisa Bernuansa Bundesliga dengan Trio Pulisic, Timo Werner, dan
-                                                Kai Havertz</a>
-                                        </div>
-                                        <div class="related-content-item">
-                                            <a href="">Chef Thomas Muller, Raja Assist Bundesliga</a>
-                                        </div>
-                                    </div>
-
                                     <?php dynamic_sidebar('sidebar2') ?>
                                 </div>
                                 <div class="content-comment">
@@ -191,7 +110,7 @@
                         <div class="col-lg-3 col-sm-4  berita-populer" >
                             <div class="row">
                             <div class="col-sm-12 bp-header-border">
-                                <label class="title-head-bp"> <a href="">Berita Populer <img src="./assets/img/misc/arrow-elipse.png" alt=""></a></label>
+                                <label class="title-head-bp"> <a href="">Berita Populer <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/arrow-elipse.png" alt=""></a></label>
                             </div>
                                 <div class="row content-bp">
                                     <div class="col-sm-12 col-5 thumbnail-bp">

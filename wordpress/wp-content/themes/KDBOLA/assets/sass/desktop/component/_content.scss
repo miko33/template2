@@ -172,6 +172,7 @@
             width: 25px;
             height: 25px;
             border-radius: 50%;
+            margin-bottom: 6px;
         }
     }
 }.content-bp {
@@ -284,18 +285,15 @@
     }
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
-    content: ">";
-}
 
-.breadcrumb {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-}
-.breadcrumb-item a {
+
+
+#crumbs {
+    color: #6c757d;
+    a {
     text-decoration: none;
     color: #6c757d;
+    }
 }
 .content-page {
     padding: 0  ;
@@ -486,13 +484,16 @@
         line-height: 1em;
         font-size: 12px;
         border-bottom: solid 1px #E5E5E5;
+        
 
-        .related-content-box {
+        .posts-by-tag-list {
             font: 18px/1.65em SegoeUI;
             color: #333333;
             width: 100%;
+            list-style: none;
+            padding: 0;
 
-            .related-content-item{
+            .posts-by-tag-item{
                 margin: 10px 0;
             }
         }
