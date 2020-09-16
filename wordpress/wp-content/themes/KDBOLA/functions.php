@@ -38,6 +38,8 @@ class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
 
 add_theme_support( 'post-thumbnails' );
 add_image_size('thumb-bt');
+add_image_size('thumb-bp');
+add_image_size('thumb-vid');
 
 
 function return_excerpt_text(){
@@ -89,7 +91,7 @@ function dynamictime() {
       ));
 
       register_sidebar(array(
-        'name' => "sidebar Sort BY Tag",
+        'name' => "berita terkait",
         'id' => "sidebar2"
       ));
 
@@ -104,7 +106,6 @@ function dynamictime() {
 /*=============================================
                 BREADCRUMBS
 =============================================*/
-//  to include in functions.php
 function the_breadcrumb()
 {
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
@@ -214,3 +215,28 @@ function the_breadcrumb()
         echo '</div>';
     }
 } // end the_breadcrumb()
+
+
+function getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.' Views';
+}
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }
+    else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
