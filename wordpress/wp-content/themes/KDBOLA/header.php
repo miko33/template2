@@ -95,12 +95,12 @@
                     <div class="row nav-bar-mobile">
                         <div class="col-3 " style="width: 100%;">
                             <a href="" class="top-bar-menu bar-trigger">
-                                <img src="./assets/img/misc/top-menu-bar.png" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/top-menu-bar.png" alt="">
                             </a>
                         </div>
                         <div class="col-6 logo-mobile">
                             <a href="" class="link-logo-mobile">
-                            <img src="./assets/img/misc/kdbolalogo.png" alt="">
+                            <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/kdbolalogo.png" alt="">
                             </a>
                         </div>
                         <div class="col-3">
@@ -112,19 +112,19 @@
                                     <ul class="main-sidebar">
                                         <li class="main-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/headline.png" alt="headline">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/headline.png" alt="headline">
                                                 <span>Headlines</span>
                                             </a>
                                         </li>
                                         <li class="main-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/berita-terkini.png" alt="berita-terkini">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/berita-terkini.png" alt="berita-terkini">
                                                 <span>Berita Terkini</span>
                                             </a>
                                         </li>
                                         <li class="main-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/berita-populer.png" alt="berita-populer">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/berita-populer.png" alt="berita-populer">
                                                 <span>Berita Populer</span>
                                             </a>
                                         </li>
@@ -132,73 +132,73 @@
                                     <ul class="sub-sidebar">
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/liga-indo.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/liga-indo.png" alt="">
                                                 <span>Lliga Indonesia</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/liga-eng.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/liga-eng.png" alt="">
                                                 <span>Liga Inggris</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/liga-spain.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/liga-spain.png" alt="">
                                                 <span>Liga Spanyol</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/liga-jerman.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/liga-jerman.png" alt="">
                                                 <span>LIga Jerman</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/liga-itali.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/liga-itali.png" alt="">
                                                 <span>Liga Italia</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/dunia.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/dunia.png" alt="">
                                                 <span> Dunia</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/motogp.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/motogp.png" alt="">
                                                 <span>Moto GP</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/nba.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/nba.png" alt="">
                                                 <span>NBA</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/e-sport.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/e-sport.png" alt="">
                                                 <span>E-Sport</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/ragam.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/ragam.png" alt="">
                                                 <span>Ragam</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/live-score.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/live-score.png" alt="">
                                                 <span>Livescore</span>
                                             </a>
                                         </li>
                                         <li class="sub-sidebar-item">
                                             <a href="">
-                                                <img src="./assets/img/ic-nav/video.png" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/ic-nav/video.png" alt="">
                                                 <span>Video</span>
                                             </a>
                                         </li>

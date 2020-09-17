@@ -12,6 +12,21 @@ $ ( document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+  $('div.article-body-first').each(function(){
+    var allbreak =$(this).find('hr').length;
+    var i = 1 ;
+    while (i <= allbreak ) {
+      // console.log($(this).find(`hr:nth-child(${i})`));
+      console.log(`${i} bgsd dari ${allbreak} halaman`);
+      $(`hr:nth-child(${i})`).replaceWith( `<div class="wp-block-separator"> ${i} pantek dari ${allbreak} halaman</div>`);
+      i++;
+    }
+
+    })
+  
+});
+
 
 
 

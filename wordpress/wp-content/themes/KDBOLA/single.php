@@ -161,7 +161,7 @@
                                 
                                 <div class="row content-bv">
                                     <div class="col-sm-12 col-5 thumbnail-bv">
-                                        <a href="https://www.youtube.com/embed/TB9XzvB_SWs" target="_blank">
+                                        <a href="<?php the_permalink(); ?>" target="_blank">
                                             <?php the_post_thumbnail('thumb-vid')?>
                                             <img src="/assets/img/content/img-content3.png" class="thumb-vid" alt="">
                                             <div>
