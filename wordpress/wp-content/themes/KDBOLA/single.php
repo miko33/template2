@@ -102,7 +102,7 @@
                                     <h3 class="comment-header">
                                         KOMENTAR
                                     </h3>
-                                    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
+                                    <!-- <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div> -->
                                 </div>
                             </div>
                             </div>

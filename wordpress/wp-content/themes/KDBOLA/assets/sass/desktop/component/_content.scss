@@ -96,6 +96,7 @@
     & >.thumbnail-bt {
         padding: 0;
         width: 261px;
+        height: 140px;
         & > .link-thumbs-bt {
             text-decoration: none;
 
@@ -197,7 +198,7 @@
         padding: 0;
 
         & > .head-title-content-bp {
-            font-size: 16px;
+            font-size: 14px;
             // font-weight: bold;
             font-stretch: normal;
             font-style: normal;
@@ -250,7 +251,7 @@
     border-bottom: 1px solid  #E5E5E5;
     
     & > .title-vid {
-        font-size: 15px;
+        font-size: 14px;
         // font-weight: bold;
         line-height: 1.39;
         letter-spacing: normal;
@@ -523,7 +524,7 @@
 }
 
 
-.wp-block-separator {
+div.wp-block-separator {
     display: flex;
     align-items: center;
     text-align: center;
@@ -531,14 +532,14 @@
     font-family: SegoeUI;
     margin:10px 0;
 }
-.wp-block-separator::before, .wp-block-separator::after {
+div.wp-block-separator::before, .wp-block-separator::after {
     content: '';
     flex: 1;
     border-bottom: 1px solid #ececec;
 }
-.wp-block-separator::before {
+div.wp-block-separator::before {
     margin-right: .25em;
 }
-.wp-block-separator::after {
+div.wp-block-separator::after {
     margin-left: .25em;
 }

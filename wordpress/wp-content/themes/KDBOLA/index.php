@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=0" />
     <?php wp_head(); ?>
-    <?php wp_footer();?>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -197,14 +197,14 @@
                 </div>
             </div> -->
             <!-- <script src="./assets/js/mini.js"></script> -->
-            <!-- <div class="container ads-space-container">
+            <div class="container ads-space-container">
                 <div class="col-md-12 ads-banner">
-                    <img src="./assets/img/misc/ads-banner.png" alt="" class="banner">
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/ads-banner.png" alt="" class="banner">
                 </div>
                 <div class="col-md-12 border-banner">
 
                 </div>
-            </div> -->
+            </div>
             <section id="content">
                 <div class="container main-content">
                     <div class="row content">
@@ -254,46 +254,89 @@
                             <div class="col-sm-12 bp-header-border">
                                 <label class="title-head-bp"> <a href="">Berita Populer <img src="<?php bloginfo('template_url'); ?> /assets/img/misc/arrow-elipse.png" alt=""></a></label>
                             </div>
+                            <?php
+                                    global $post;
+                                    $args = array( 'numberposts' => 10, 'offset'=> 1, 'category' => 0 );
+                                    $myposts = get_posts( $args );
+                                    foreach( $myposts as $post ) :  setup_postdata($post); ?>
                                 <div class="row content-bp">
-                                    <div class="col-sm-12 col-5 thumbnail-bp">
-                                        <a href="" class="link-thumbs-bp">
-                                            <img src="./assets/img/content/img-content3.png" alt="" class="thumbs-bp">
+                                     <div class="col-sm-12 col-5 thumbnail-bp">
+                                        <a href="<?php the_permalink(); ?>" class="link-thumbs-bp">
+                                            <?php the_post_thumbnail('thumb-bp'); ?>
                                         </a>
                                     </div>
                                     <div class="col-sm-12 col-7 header-content-bp">
-                                        <label class="time-content">1 Jam 32 Menit Lalu</label>
-                                        <h4 class="head-title-content-bp"><a href="" class="head-title-content-link-bp">Akankah Cristiano Ronaldo Tinggalkan Juventus di Akhir Musim?</a></h4>
+                                        <label class="time-content"><?php the_time()  ?></label>
+                                        <h4 class="head-title-content-bp"><a href="<?php the_permalink(); ?>" class="head-title-content-link-bp"><?php the_title(); ?></a></h4>
+                                    </div> 
                                     </div>
-                                </div>
+                                    <?php endforeach; ?>
                                 <div class="col-sm-12 col-12 bv-header-border">
-                                    <label class="title-head-bp"> <a href="">Berita Video <img src="./assets/img/misc/arrow-elipse.png" alt=""></a></label>
+                                    <label class="title-head-bp"> <a href="">Berita Video <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/arrow-elipse.png" alt=""></a></label>
                                 </div>
+
+
+                                <?php
+                                $args = array(
+                                    'post_type' => 'post',
+                                     'posts_per_page' => 5,
+                                    'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'post_tag',
+                                            'field'    => 'name',
+                                            'terms'    => 'video',
+                                        ),
+                                    ),
+                                );
+                                $query = new WP_Query( $args );  
+                                
+                                ?>
+
+                               
+
+                                <?php if ( $query->have_posts() ) :  ?>
+                                  
+                                <?php $header = true; while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                                <?php if($header) {
+                                        $header = false; ?>
+                                
                                 <div class="row content-bv">
                                     <div class="col-sm-12 col-5 thumbnail-bv">
-                                        <a href="https://www.youtube.com/embed/TB9XzvB_SWs" target="_blank">
-                                            <img src="./assets/img/content/img-content3.png" class="thumb-vid" alt="">
+                                        <a href="<?php the_permalink(); ?>" target="_blank">
+                                            <?php the_post_thumbnail('thumb-vid')?>
+                                            <img src="/assets/img/content/img-content3.png" class="thumb-vid" alt="">
                                             <div>
-                                                <img src="./assets/img/misc/play-video.png" class="play-vid" alt="">
+                                                <img src="<?php bloginfo('template_url'); ?>/assets/img/misc/play-video.png" class="play-vid" alt="">
                                             </div>
                                         </a>
                                     </div>
-                                
-                                <div class="col-sm-12 col-7 title-vid-bv">
+                                    <div class="col-sm-12 title-vid-bv">
                                     <h4 class="title-vid">
-                                        <a href="">VIDEO: 5 Pemain Hebat yang
-                                        Gagal Bermain di Premiere
-                                        League Termasuk Andriy Shev...
+                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
                                         </a>
                                     </h4>
                                 </div>
+
+                                <?php } else { ?>
+                                
                                 <div class="col-sm-12 title-vid-bv">
                                     <h4 class="title-vid">
-                                        <a href="">VIDEO: Danny Welbeck dan 4
-                                        Pemain Debutan Termuda 
-                                        Mancherster United di Premie...
+                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?>
                                         </a>
                                     </h4>
                                 </div>
+                                
+
+                               
+
+
+                                <?php } endwhile; ?>
+                                <?php else : ?>
+                                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                                <?php endif; ?>
+
+
 
                                 </div>
                             </div>
@@ -318,5 +361,6 @@
                 </div>
             </section>
         </div>
+        <?php wp_footer();?>
 </body>
 </html>

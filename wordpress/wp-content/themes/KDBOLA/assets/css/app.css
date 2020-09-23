@@ -480,6 +480,7 @@ body.main {
 .content-bt > .thumbnail-bt {
   padding: 0;
   width: 261px;
+  height: 140px;
 }
 
 .content-bt > .thumbnail-bt > .link-thumbs-bt {
@@ -588,7 +589,7 @@ body.main {
 }
 
 .content-bp > .header-content-bp > .head-title-content-bp {
-  font-size: 16px;
+  font-size: 14px;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.39;
@@ -640,7 +641,7 @@ body.main {
 }
 
 .title-vid-bv > .title-vid {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.39;
   letter-spacing: normal;
 }
@@ -888,7 +889,7 @@ body.main {
   list-style: none;
 }
 
-.wp-block-separator {
+div.wp-block-separator {
   display: flex;
   align-items: center;
   text-align: center;
@@ -897,17 +898,17 @@ body.main {
   margin: 10px 0;
 }
 
-.wp-block-separator::before, .wp-block-separator::after {
+div.wp-block-separator::before, .wp-block-separator::after {
   content: '';
   flex: 1;
   border-bottom: 1px solid #ececec;
 }
 
-.wp-block-separator::before {
+div.wp-block-separator::before {
   margin-right: .25em;
 }
 
-.wp-block-separator::after {
+div.wp-block-separator::after {
   margin-left: .25em;
 }
 
